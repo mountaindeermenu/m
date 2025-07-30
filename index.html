@@ -1,0 +1,425 @@
+<html lang="ar" data-arp=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم وكافيه غزال الجبل</title>
+<link rel="shortcut icon" href="Photos\logo.png">
+<img src="apple-touch-icon" href="Photos\logo.png">
+<link rel= stylesheet href= style.css>
+</head>
+<bodystyle="direction: rtl;">
+    <header>
+        <h2 id="title">مطعم وكافيه غزال الجبل</h2>
+        <select id="languageSwitcher" onchange="switchLanguage()">
+            <option value="ar" selected="">العربية</option>
+            <option value="en">English</option>
+        </select>
+    </header>
+    <main>
+        <center><img loading="lazy" class="formLogoImg" src="Photos\logo.png" width="160" height="160"></center>
+&nbsp;
+<center>
+                                    
+                                    <aherf onclick="window.open('https://web.facebook.com/mountaindeer962/?_rdc=1&_rdr', '_blank');" class="xs-btn">
+                                      <img src="Photos\Facebook.png" class="xs-btn" style="width: 50px; height: 50px;" alt="facebook">
+                                    </aherf>
+                    
+                                    <aherf onclick="window.open('https://www.instagram.com/mountaindeer962/', '_blank');" class="xs-btn">
+                                      <img src="Photos\instagram.png" class="xs-btn" style="width: 50px; height: 50px;" alt="instagram">
+                                    </aherf>
+                    
+                                    
+                    
+                                    
+                    
+                    <aherf onclick="window.open('https://maps.app.goo.gl/6TNTHPPbhTuqNDuw8', '_blank');" class="xs-btn">
+                                      <img src="Photos/Location.png" class="xs-btn" style="width: 50px; height: 50px;" alt="google maps">
+                                    </aherf>
+                    
+                        
+                    
+                    
+                            
+                                  </center>
+
+<section id="menu">
+            <h3 id="menuTitle">المنيو</h3>
+            <ul id="menuItems">
+                <!-- Menu items with products -->
+                <li id="item1" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category1">الفطور</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product1_1">حمص</span><span>1.50 JD</span></li>
+                        <li class="product-item"><span id="product1_2">حمص بيروتي</span><span>1.75 JD</span></li>
+                        <li class="product-item"><span id="product1_3">فلافل</span><span>1.00 JD</span></li>
+                        <li class="product-item"><span id="product1_4">فول</span><span>1.50 JD</span></li>
+                        <li class="product-item"><span id="product1_5">مناقيش</span><span>2.00 JD</span></li>
+                    <li class="product-item"><span id="product1_6">لبنه</span><span>1.00 JD</span></li><li class="product-item"><span id="product1_7">سنيوره</span><span>1.50 JD</span></li><li class="product-item"><span id="product1_8">تيركي</span><span>1.50 JD</span></li><li class="product-item"><span id="product1_9">بيض</span><span>1.50 JD</span></li><li class="product-item"><span id="product1_10">بيض مع خضار</span><span>2.00 JD</span></li><li class="product-item"><span id="product1_11">مربى وزبدة بلدية</span><span>1.00 JD</span></li><li class="product-item"><span id="product1_12">مفركة بطاطا</span><span>2.50 JD</span></li><li class="product-item"><span id="product1_13">قلاية بندورة</span><span>2.50 JD</span></li><li class="product-item"><span id="product1_14">كبة (4 حبات)</span><span>2.50 JD</span></li><li class="product-item"><span id="product1_15">سمبوسك (4 حبات)</span><span>2.00 JD</span></li><li class="product-item"><span id="product1_16">صحن سيرفس</span><span>2.00 JD</span></li><li class="product-item"><span id="product1_17">بطاطا مقلية</span><span>2.00 JD</span></li><li class="product-item"><span id="product1_18">بطاطا ودجز</span><span>2.50 JD</span></li></ul>
+                </li>
+                <li id="item2" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category2">مقبلات باردة</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product2_1">حمص شامي</span><span>1.50 JD</span></li>
+                        <li class="product-item"><span id="product2_2">حمص بيروتي</span><span>1.75 JD</span></li>
+                        <li class="product-item"><span id="product2_3">متبل</span><span>1.50 JD</span></li>
+                        <li class="product-item"><span id="product2_4">بابا غنوج</span><span>1.75 JD</span></li>
+                        <li class="product-item"><span id="product2_5">بقدونسية</span><span>1.00 JD</span></li>
+                    <li class="product-item"><span id="product2_6">سيرفس</span><span>2.00 JD</span></li><li class="product-item"><span id="product2_7">لبن رايب</span><span>1.50 JD</span></li></ul>
+                </li>
+                <li id="item3" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category3">سلطات</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product3_1">سلطة عربية</span><span>2.00 JD</span></li>
+                        <li class="product-item"><span id="product3_2">فتوش</span><span>2.50 JD</span></li>
+                        <li class="product-item"><span id="product3_3">سلطة جرجير</span><span>3.00 JD</span></li>
+                        <li class="product-item"><span id="product3_4">تبولة</span><span>2.75 JD</span></li>
+                        <li class="product-item"><span id="product3_5">سلطة تركية</span><span>2.00 JD</span></li>
+                    <li class="product-item"><span id="product3_6">سلطة يونانية</span><span>3.00 JD</span></li><li class="product-item"><span id="product3_7">سلطة سيزر بالدجاج</span><span>3.25 JD</span></li><li class="product-item"><span id="product3_8">خيار باللبن</span><span>2.00 JD</span></li></ul>
+                </li>
+                <li id="item4" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category4">مقبلات ساخنة</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product4_1">حمص باللحمه والمكسرات
+</span><span>4.50 JD</span></li>
+                        <li class="product-item"><span id="product4_2">فلافل</span><span>1.00 JD</span></li>
+                        <li class="product-item"><span id="product4_3">كبة مقلية (4 حبات)
+</span><span>2.50 JD</span></li>
+                        <li class="product-item"><span id="product4_4">سمبوسك (4 حبات)
+</span><span>2.00 JD</span></li>
+                        <li class="product-item"><span id="product4_5">قلاية بندورة
+</span><span>2.50 JD</span></li>
+                    <li class="product-item"><span id="product4_6">قلاية بندورة باللحمه
+</span><span>5.00 JD</span></li><li class="product-item"><span id="product4_7">كبدة دجاج بدبس الرمان
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product4_8">اجنحة دجاج البافلو/ باربيكيو
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product4_9">جبنة حلوم
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product4_10">بطاطا مقليه
+</span><span>2.00 JD</span></li><li class="product-item"><span id="product4_11">بطاطا لبنانية حاره
+</span><span>2.75 JD</span></li><li class="product-item"><span id="product4_12">بطاطا إيطالي
+</span><span>2.75 JD</span></li><li class="product-item"><span id="product4_13">بطاطا ودجز
+</span><span>2.50 JD</span></li></ul>
+                </li>
+                <li id="item5" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category5">سناكات</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product5_1">شاورما دجاج عادي
+</span><span>3.00 JD</span></li>
+                        <li class="product-item"><span id="product5_2">شاورما دجاج دبل
+</span><span>5.50 JD</span></li>
+                        <li class="product-item"><span id="product5_3">برجر سكالوب
+</span><span>3.50 JD</span></li>
+                        <li class="product-item"><span id="product5_4">برجر لحمه كلاسيك (لحم طازج)
+</span><span>4.50 JD</span></li>
+                        <li class="product-item"><span id="product5_5">برجر غزال الجبل الخاص
+</span><span>5.50 JD</span></li>
+                    </ul>
+                </li>
+            <li id="item6" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category6">البيتزا</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product6_1">بيتزا غزال الجبل
+</span><span>4.00 JD</span></li>
+                        <li class="product-item"><span id="product6_2">بيتزا مارجريتا
+</span><span>3.50 JD</span></li>
+                        <li class="product-item"><span id="product6_3">بيتزا خضار
+</span><span>3.50 JD</span></li>
+                        <li class="product-item"><span id="product6_4">بيتزا زنجر
+</span><span>3.50 JD</span></li>
+                        <li class="product-item"><span id="product6_5">بيتزا تيركي
+</span><span>3.50 JD</span></li>
+                    <li class="product-item"><span id="product6_6">بيتزا ببروني
+</span><span>3.50 JD</span></li></ul>
+                </li>
+                <li id="item7" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category7">الطبق الرئيسي</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product7_1">صدر دجاج مطفى بالثوم والليمون
+</span><span>7.50 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product7_2">صدر دجاج بالفطر والكريما
+</span><span>7.50 JD</span></li><li class="product-item"><span id="product7_3">سمك دينيس (مقلي أو مشوي)
+</span><span>8.50 JD</span></li></ul>
+                </li><li id="item8" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category8">الصواني والفخارات</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product8_1">كفته بالبندوره (500 غم)
+</span><span>5.50 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product8_2">كفته بالطحينيه (500 غم)
+</span><span>5.50 JD</span></li><li class="product-item"><span id="product8_3">صاجية دجاج (500 غم)
+</span><span>6.50 JD</span></li><li class="product-item"><span id="product8_4">صاجية لحمه (500 غم)
+</span><span>10.00 JD</span></li><li class="product-item"><span id="product8_5">فخارة زنجر
+</span><span>5.00 JD</span></li><li class="product-item"><span id="product8_6">فخارة غزال الجبل (كبير)
+</span><span>6.00 JD</span></li><li class="product-item"><span id="product8_7">فخارة غزال الجبل (صغير)
+</span><span>4.00 JD</span></li></ul>
+                </li><li id="item9" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category9">المشاوي</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product9_1">مشكل (1 كيلو)
+</span><span>20.00 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product9_2">شقف (1 كيلو)
+</span><span>22.00 JD</span></li><li class="product-item"><span id="product9_3">كباب (1 كيلو)
+</span><span>19.00 JD</span></li><li class="product-item"><span id="product9_4">شيش طاووق (1 كيلو)
+</span><span>18.00 JD</span></li><li class="product-item"><span id="product9_5">دجاج تركي
+</span><span>7.50 JD</span></li><li class="product-item"><span id="product9_6">نصف دجاجه تركيه
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product9_7">عرايس
+</span><span>1.50 JD</span></li><li class="product-item"><span id="product9_8">رول لحم بالخضار
+</span><span>9.00 JD</span></li></ul>
+                </li><li id="item10" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category10">سوفت درينك</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product10_1">ماء صغير
+</span><span>0.50 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product10_2">ريد بول
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product10_3">بوم بوم
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product10_4">كولا
+</span><span>1.00 JD</span></li><li class="product-item"><span id="product10_5">سبرايت
+</span><span>1.00 JD</span></li><li class="product-item"><span id="product10_6">فانتا
+</span><span>1.00 JD</span></li><li class="product-item"><span id="product10_7">باربيكان</span><span>1.50 JD</span></li></ul>
+                </li><li id="item11" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category11">المشروبات الساخنة</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product11_1">شاي
+</span><span>1.00 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product11_2">شاي أخضر
+
+</span><span>1.25 JD</span></li><li class="product-item"><span id="product11_3">قهوة تركية
+</span><span>2.00 JD</span></li><li class="product-item"><span id="product11_4">كابتشينو
+</span><span>2.00 JD</span></li><li class="product-item"><span id="product11_5">هوت شوكلت
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product11_6">سبانش لاتيه
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product11_7">هوت موكا (وايت,دارك)
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product11_8">كوفي لاتيه
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product11_9">امريكان بلاك
+</span><span>2.00 JD</span></li><li class="product-item"><span id="product11_10">امريكانو
+</span><span>2.00 JD</span></li><li class="product-item"><span id="product11_11">شاي كرك
+</span><span>1.50 JD</span></li><li class="product-item"><span id="product11_12">نسكافيه
+</span><span>2.00 JD</span></li><li class="product-item"><span id="product11_13">زهورات
+</span><span>1.25 JD</span></li><li class="product-item"><span id="product11_14">إسبريسو سنجل شوت
+</span><span>1.50 JD</span></li><li class="product-item"><span id="product11_15">إسبريسو دبل شوت
+</span><span>2.50 JD</span></li></ul>
+                </li><li id="item12" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category12">المشروبات الباردة</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product12_1">آيس لاتيه (كراميل,فانيلا,بندق)
+</span><span>2.50 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product12_2">آيس موكا (دارك,وايت)
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product12_3">آيس كراميل ميكاتو
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product12_4">آيس سبانش لاتيه
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product12_5">آيس تي (خوخ,ليمون)
+</span><span>2.00 JD</span></li><li class="product-item"><span id="product12_6">فرابتشينو (كراميل-دارك,وايت)
+</span><span>3.50 JD</span></li><li class="product-item"><span id="product12_7">آيس كوفي
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product12_8">آيس امريكانو
+</span><span>2.00 JD</span></li></ul>
+                </li><li id="item13" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category13">ميلك شيك</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product13_1">ميلك شيك شوكولاته
+</span><span>3.00 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product13_2">ميلك شيك فانيلا
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product13_3">ميلك شيك فراولة
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product13_4">ميلك شيك توت
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product13_5">ميلك شيك مانجا
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product13_6">ميلك شيك عربية
+</span><span>3.50 JD</span></li><li class="product-item"><span id="product13_7">ميلك شيك اوريو
+</span><span>3.50 JD</span></li><li class="product-item"><span id="product13_8">ميلك شيك سنيكرز
+</span><span>3.50 JD</span></li><li class="product-item"><span id="product13_9">ميلك شيك كروكان
+</span><span>3.50 JD</span></li></ul>
+                </li><li id="item14" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category14">كوكتيلات وعصائر</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product14_1">فيري بيري
+</span><span>3.00 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product14_2">بيناكولادا
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_3">مانجو باشن
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_4">موز وحليب
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product14_5">فراولة وحليب
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product14_6">موز وفراولة وحليب
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_7">مانجو بيتش
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_8">مانجا
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_9">تفاح وكيوي
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_10">فراولة
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_11">كيوي وليمون
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_12">ليمون ونعنع
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_13">ليمون طبيعي
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_14">برتقال طبيعي
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product14_15">كيوي وفراولة
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_16">كيوي وأناناس
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product14_17">افوكادو بالمكسرات والقشطة
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product14_18">عصير 3 سيزون
+</span><span>3.50 JD</span></li></ul>
+                </li><li id="item15" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category15">موهيتو</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product15_1">موهيتو كلاسيك
+</span><span>2.50 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product15_2">موهيتو ريد بول
+</span><span>3.50 JD</span></li><li class="product-item"><span id="product15_3">موهيتو بوم بوم
+</span><span>3.00 JD</span></li></ul>
+                </li><li id="item16" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category16">آيس كريم</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product16_1">سكوب آيس كريم
+</span><span>1.25 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product16_2">دبل سكوب آيس كريم
+</span><span>2.00 JD</span></li></ul>
+                </li><li id="item17" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category17">تسالي</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product17_1">DIP ناتشوز مع
+</span><span>3.00 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product17_2">مياس
+</span><span>2.50 JD</span></li><li class="product-item"><span id="product17_3">مكسرات ماليزية
+</span><span>1.50 JD</span></li></ul>
+                </li><li id="item18" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category18">الحلويات</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product18_1">مافن
+</span><span>2.50 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product18_2">كريب كلاسيك
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product18_3">وافل كلاسيك
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product18_4">بان كيك
+</span><span>3.00 JD</span></li><li class="product-item"><span id="product18_5">سلطة فواكة
+</span><span>3.50 JD</span></li><li class="product-item"><span id="product18_6">فوتيتشيني ال شوكلت
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product18_7">كريب ( بستاشيو/ لوتس)
+</span><span>3.50 JD</span></li><li class="product-item"><span id="product18_8">وافل ( لوتس/ بستاشيو)
+</span><span>3.50 JD</span></li></ul>
+                </li><li id="item19" class="closed" onclick="toggleCategory(this)">
+                    <div class="category-header">
+                        <span id="category19">الأراجيل</span>
+                        <div class="toggle-icon"></div>
+                    </div>
+                    <ul class="products">
+                        <li class="product-item"><span id="product19_1">نخلة
+</span><span>5.00 JD</span></li>
+                        
+                        
+                        
+                        
+                    <li class="product-item"><span id="product19_2">تفاحتين مزايا
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product19_3">علكة وقرفة
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product19_4">بطيخ ونعنع
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product19_5">بلوبيري
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product19_6">كاندي
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product19_7">ليمون ونعنع
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product19_8">علكة ونعنع
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product19_9">Love
+</span><span>4.00 JD</span></li><li class="product-item"><span id="product19_10">عنب وتوت
+</span><span>4.00 JD</span></li></ul>
+                </li><font color="gold"> <center><h3>
+                            <span>.Copyright ©2025 All rights reserved</span></h3></center></font>
+                            <center>
+                         
+                                <aherf onclick="window.open('https://www.instagram.com/laithdeveloper/', '_blank');" class="xs-btn">
+                                    <img src="Photos/LaithInstagram.png" class="xs-btn" style="width: 70px; height: 70px;" alt="instagram">
+                                  </aherf>
+                              <h3><font color="gold">LAITH DEVELOPER</font></h3> 
+                            </center></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+                            
+
+    </bodystyle>
+</body>
+</head>
+
+</html>
+

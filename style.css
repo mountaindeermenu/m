@@ -1,0 +1,114 @@
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #000000, #333333);
+            color: #FFD700; /* Gold color */
+            direction: rtl; /* Right-to-left direction for Arabic */
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(45deg, #111111, #444444);
+            border-bottom: 2px solid #FFD700; /* Gold color */
+        }
+
+        h1, h2 {
+            margin: 0;
+            color: #FFD700; /* Gold color */
+        }
+
+        select {
+            padding: 5px;
+            background-color: #444444;
+            color: #FFD700; /* Gold color */
+            border: 1px solid #FFD700; /* Gold color */
+            border-radius: 5px;
+        }
+
+        main {
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 15px;
+            background: linear-gradient(45deg, #222222, #555555);
+            margin: 10px 0;
+            border: 1px solid #FFD700; /* Gold color */
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            position: relative;
+        }
+
+        li:hover {
+            background-color: #333333;
+            transform: scale(1.02);
+        }
+
+        .category-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .category-header span {
+            flex: 1;
+        }
+
+        .toggle-icon {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23FFD700" d="M12 15.5l-6.5-6.5 1.5-1.5 5 5 5-5 1.5 1.5z"/></svg>');
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: transform 0.3s, margin 0.3s;
+        }
+
+        .products {
+            margin-top: 10px;
+            padding-left: 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+        }
+
+        .products.open {
+            max-height: 5000px; /* Large enough to fit the content */
+            padding: 10px 20px;
+            transition: max-height 0.5s ease-in, padding 0.5s ease-in;
+        }
+
+        .open .toggle-icon {
+            transform: rotate(180deg);
+            margin-top: -10px; /* Adjust for the open state */
+        }
+
+        .closed .toggle-icon {
+            transform: rotate(0deg);
+            margin-bottom: -10px; /* Adjust for the closed state */
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product-item span {
+            color: #FFD700; /* Gold color */
+        }
